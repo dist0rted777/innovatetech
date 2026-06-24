@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{C2410C}
+\definecolor{ink}{HTML}{111111}
+\definecolor{muted}{HTML}{444444}
+\color{ink}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Section heading with rule
+\newcommand{\cvsection}[1]{%
+  \vspace{8pt}{\color{accent}\bfseries\large #1}\\[-4pt]
+  {\color{accent}\rule{\linewidth}{1.1pt}}\\[3pt]}
+
+% Project entry: title -- tech
+\newcommand{\project}[2]{%
+  \textbf{#1}\hfill{\color{muted}\small #2}\\}
+
+\begin{document}
+
+%==================== HEADER ====================
+{\Huge\bfseries Chidiebere Emmanuel Udegbe}\\[4pt]
+{\large\color{accent}\bfseries Mechatronics Engineer}\;{\color{muted}\large $\cdot$ Robotics, IoT \& Embedded Systems}\\[6pt]
+{\color{muted}
+\href{mailto:audegbe2003@gmail.com}{audegbe2003@gmail.com} \;$\vert$\;
+\href{https://github.com/dist0rted777}{github.com/dist0rted777} \;$\vert$\;
+\href{https://dist0rted777.github.io}{dist0rted777.github.io} \;$\vert$\;
+Nigeria --- open to remote / relocation}
+
+\cvsection{Profile}
+Mechatronics engineer who designs and builds working robots and autonomous systems
+end-to-end --- from mechanical CAD and electrical schematics to embedded firmware and a
+tested build. Comfortable across hardware, software and applied AI. Also a music producer
+and video editor (\textit{DIST0RTED}). Strong at turning an idea into a physical,
+functioning prototype.
+
+\cvsection{Selected Projects}
+\project{Wi-Fi Teach-and-Repeat Mobile Robot \textnormal{(Final-year project)}}{ESP32 $\cdot$ IMU + odometry $\cdot$ L298N}
+A tank-tread robot that records a manually driven path and autonomously repeats it, using
+low-cost inertial and odometric sensing. Full CAD, electrical schematics and working build.
+\vspace{4pt}
+
+\project{Automatic Solar-Powered Maize Sheller}{Arduino $\cdot$ SolidWorks $\cdot$ Solar + MPPT $\cdot$ KiCad}
+Solar-powered machine that shells maize automatically --- mechanical CAD, drive-train design,
+control schematics and a field-built prototype.
+\vspace{4pt}
+
+\project{IoT Prepaid Energy Meter \& Load Management}{ESP32 $\cdot$ ACS712 $\cdot$ Blynk / ThingSpeak}
+Prepaid energy meter with automated load management and a web dashboard for real-time
+monitoring and control.
+\vspace{4pt}
+
+\project{IoT Hybrid Access Control System}{ESP32 $\cdot$ RFID (RC522) $\cdot$ Keypad $\cdot$ Mobile app}
+Hybrid RFID + keypad + app access-control system for remote property management, with mobile
+and web interfaces.
+\vspace{4pt}
+
+\project{Robotic Assistant for Hospital Supply Delivery}{ESP32 $\cdot$ DC drive $\cdot$ Onboard camera}
+Autonomous cart robot for ferrying supplies through hospital corridors --- CAD chassis, power
+circuit and built prototype.
+\\[2pt]
+{\color{muted}\small Further projects: autonomous line-guided warehouse delivery robot, dual-purpose solar-powered scarecrow, smart-house electrical design. Full portfolio at dist0rted777.github.io.}
+
+\cvsection{Technical Skills}
+\newcommand{\skill}[2]{\makebox[2.7cm][l]{\textbf{#1}}\parbox[t]{\dimexpr\linewidth-2.7cm}{#2}\\[3pt]}
+\skill{CAD / Mech}{SolidWorks, Fusion 360, Autodesk Inventor; 3D modeling, prototyping, 3D printing}
+\skill{Electronics}{KiCad, EasyEDA; schematic \& PCB design, sensors \& motor control, solar / MPPT power}
+\skill{Embedded}{ESP32, Arduino (C/C++); microcontrollers, PWM motor drive, PID control}
+\skill{AI / Autonomy}{Computer vision, sensor fusion, path planning, ML \& model training (Python), LLM / agent building}
+\skill{IoT}{Blynk, ThingSpeak; Wi-Fi dashboards, remote monitoring \& control}
+\skill{Creative}{Premiere Pro, DaVinci Resolve, CapCut (video); FL Studio (music production)}
+\skill{Tools}{Python, Git / GitHub}
+
+\cvsection{Education}
+\textbf{B.Eng, Mechatronics Engineering} \hfill {\color{muted}\small 2026}\\
+{\color{muted}\small Afe Babalola University, Ado-Ekiti, Nigeria --- College of Engineering, Dept.\ of Mechanical \& Mechatronics Engineering}
+
+\end{document}
